@@ -1,7 +1,7 @@
 #include<iostream>
 #include<cstdio>
 #include<cmath>
-#define EPS (10e-8) //símbolo matemático griego epsilon que se utiliza en este contexto como el valor más pequeño posible para (datos o tipo de datos, según el contexto). Los valores más pequeños se consideran cero. 
+#define EPS (10e-8) //sÃ­mbolo matemÃ¡tico griego epsilon que se utiliza en este contexto como el valor mÃ¡s pequeÃ±o posible para (datos o tipo de datos, segÃºn el contexto). Los valores mÃ¡s pequeÃ±os se consideran cero. 
 using namespace std;
 
 double p,q,r,s,t,u;
@@ -15,11 +15,10 @@ int main(){
     while(scanf("%lf%lf%lf%lf%lf%lf",&p,&q,&r,&s,&t,&u)!=EOF){
     
         double left=0, right=1, mid;
-        bool flag=false;
         
         if(fomula(left)*fomula(right) > 0)
 		{
-            cout<<("No solution\n"); 
+            cout<<("No tiene solucion\n"); 
             continue;
         }
         while(right-left > EPS)
